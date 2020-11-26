@@ -1,0 +1,15 @@
+#Untuk Migrasi 
+php artisan migrate
+
+#Auth
+membuat tabel
+mengisi pada model -> fillabel
+
+#membuat seeder ( untuk input ke database ) tanpa form
+php artisan make:seeder AkunSeeder
+
+#input data ke database via seeder
+php artisan db:seed --class=AkunSeeder
+
+#Membuat middleware
+php artisan make:middleware Cek_login
